@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Brownie Clicker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <div id="game">
+      <h1>Brownie Clicker</h1>
+      <div id="stats">
+        Brownies: <span id="brownies">0</span><br>
+        Brownies Per Second: <span id="bps">0</span><br>
+        Click Power: <span id="clickPower">1</span>x
+      </div>
+      <div id="clickArea">
+        <img id="brownie" src="brownie.svg" alt="Brownie">
+      </div>
+      <button id="upgradeClickerButton">Upgrade Clicker</button>
+    </div>
+    <div id="upgradeBar">
+      <h2>Upgrades</h2>
+      <div id="upgradeList">
+        <!-- Upgrades will be added here by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <div id="debugMenu" style="display: none;">
+    <h2>Debug Menu</h2>
+    <input type="number" id="debugAmount" placeholder="Amount to add">
+    <button id="addBrowniesButton">Add Brownies</button>
+    <button id="closeDebugMenu">Close</button>
+  </div>
+
+  <div id="saveLoadButtons">
+    <button id="saveButton">Save</button>
+    <button id="loadButton">Load</button>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
